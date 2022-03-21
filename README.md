@@ -139,4 +139,4 @@ All login mechanism work properly, but sometimes OpenCV camera doesn't show up w
 **image in the log in page:** https://recfaces.com/wp-content/uploads/2021/01/face_scan_adobe-830x553.jpg
 
 # Thank you for reading til the end. YOU ARE AMAZING!!! :D
-<img src="./static/photos/python_java_meme.gif">
+<img src="./static/photos/java-python.gif">
