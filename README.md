@@ -8,8 +8,6 @@
 **Loggin in and running inference process:**  
 <img src="./assets/short_demo.gif">
 
-**Link to full demo on Youtube (recommend watching):** https://www.youtube.com/watch?v=2S-HmiPNViU 
-
 ## Result
 * The face recognition works well detecting face and accurately recognizing the face.
 * The liveness detection works well with classifying fake images and videos from smartphone spoofing.
