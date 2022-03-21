@@ -1,0 +1,10 @@
+all programs and models needed to run the assistant, excluding the PLC program and face recognition model are stored in this folder
+Steps 
+
+1. connect PC to PLC through ethernet
+2. Launch TIA portal
+3. Download TIA program to PLC
+4. start PLC CPU
+5. Open preferred IDE
+6. Run server program 
+7. Run client program

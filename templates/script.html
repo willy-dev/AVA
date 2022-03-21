@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/invoke.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoke</title>
+</head>
+<body>
+    <header>
+        <h2>Welcome <span class="resize-text"> {{ name }} </span>. </h2> <br>
+        <h2> <span class="resize-text">AVA</span> is Powered By AI</h2>
+    </header>
+    <div class="box">
+         <div class="btn">
+             <a class="btn-2" href="{{ url_for('setph') }}">
+                 <span  class="button__text-1">Set PH</span>
+                <span class="button__icon-1">
+                    <ion-icon name="mic-outline"></ion-icon>
+                </span>
+            </a>
+             <a class="btn-1" href="{{ url_for('stop') }}">
+                 <span  class="button__text-2">Stop</span>
+                <span class="button__icon-2">
+                    <ion-icon name="power-outline"></ion-icon>
+                </span>
+            </a>
+         </div>
+     </div>  
+     <footer>
+        <p>Authors: <br> Wilfred Wachira <br>
+            Kelvin Muriira <br>
+            Joe Kasaine <br>
+        </p>
+      </footer>  
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

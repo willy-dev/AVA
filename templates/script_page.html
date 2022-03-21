@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+        }
+        h2 {
+            margin: 0;
+            padding: 0;
+            color: black;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2em;
+            font-weight: 800;
+            font-style: oblique;
+        }
+        .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform translate(-50, -50)
+        }
+        .button {
+            display: inline-flex;
+            height: 50px;
+            padding: 0;
+            background: #009578;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            overflow: hidden;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #008168;
+        }
+        .button:active {
+            background: #006e58;
+        }
+        .button__text,
+        .button__icon {
+            display: inline-flex;           
+            align-items: center;
+            padding: 0 24px;
+            color: #fff;
+            height: 100%;
+        }
+        .button__icon {
+            font-size: 1.5em;
+            background: rgba(0, 0, 0, 0.08);
+
+        }
+        
+        .btn-1 {
+            text-decoration: none;
+            display: inline-flex;
+            height: 50px;
+            margin: 10px;
+            padding: 0;
+            color: white;
+            background: #009578;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            overflow: hidden;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+
+        
+        }
+        .btn-1:hover {
+            background: #008168;
+        }
+        .btn-1:active {
+            background: #006e58;
+        }
+        .btn-2 {
+            margin: 10px;
+            text-decoration: none;
+            display: inline-flex;
+            height: 50px;
+            padding: 0;
+            color: white;
+            background: #e93f3f;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            overflow: hidden;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        
+        }
+        .btn-2:hover {
+            background: #ca2222;
+        }
+        .btn-2:active {
+            background: #bd1f1f;
+        }
+    </style>
+</head>
+<body>
+     <div class="box">
+        <h2>Welcome {{ name }}! Your website goes here!</h2> <br>
+         <div class="btn">
+             <a class="btn-1" href="{{ url_for('setph') }}">
+                 <span  class="button__text">SetPH</span>
+                <span class="button__icon">
+                    <ion-icon name="mic-outline"></ion-icon>
+                </span>
+            </a>
+             <a class="btn-2" href="{{ url_for('stop') }}">
+                 <span  class="button__text">Stop</span>
+                <span class="button__icon">
+                    <ion-icon name="power-outline"></ion-icon>
+                </span>
+            </a>
+         </div>
+     </div>  
+        
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
