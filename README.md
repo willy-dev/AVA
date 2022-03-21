@@ -3,7 +3,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;We have implemented Flask web application login page including face verification (1-to-1 to verify whether the person who is logging in is really that person), for security purpose, with liveness detection mechanism (to check whether the person detected on the camera is a REAL person or FAKE (eg. image, video, etc. of that person)), for Anti-Spoofting (Others pretending to be the person), built with Convolutional Neural Network. After the login page, we also provided a webpage placeholder for future use.   
   
 **Login component:**  
-<img src="./assets/login-page.jpg" width=374 height=521>  
+<img src="./assets/login-page.png" width=374 height=521>  
   
 **Loggin in and running inference process:**  
 <img src="./assets/short_demo.gif">
