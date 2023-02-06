@@ -121,11 +121,15 @@ Use requirements.txt if you want to install the correct version of packages.
 19. Congratulations! You've done everything :D
 
 ## Hope you find our project exciting and useful more or less :D
+NB: The rest of code and files involve the Amatrol Analytic Process control machine at DKUT, Siemens Center, the AI is used to authenticate access to the machine. It's just a feature built on top of the process.
+The feature is not limited to any machine and can have different use cases depending on your needs.
 
 ## What can be improved
 - Collect more data in many light conditions and from different genders/ethnics to improve the model (it turned out light intensity and condition play a big role here)
 - Connect this login web template to the real app.
 - Implement more login mechanism
+- Add admin profiles to create another layer of security.
+- Better frontend UI/UX, am working on it
 
 ## Problems we've found
 All login mechanism work properly, but sometimes OpenCV camera doesn't show up when calling a function from app.py or when logging in. But restarting app.py once or twice always solves the problem.
