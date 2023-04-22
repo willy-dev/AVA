@@ -1,5 +1,7 @@
 # Face Recognition with Liveness Detection Login on Flask Web interface for Siemens PLCs
 # Digital twin for Amatrol T554 Siemens Process control station at Dekut Siemens Center
+
+Big thanks to Runo Harris, a fellow Mechatronics Engineer and Data Scientist for all the help in building this project, you deserve a beer my G
 ## Project Overview
 &nbsp;&nbsp;&nbsp;&nbsp;We have implemented Flask web application login page including face verification (1-to-1 to verify whether the person who is logging in is really that person), for security purpose, with liveness detection mechanism (to check whether the person detected on the camera is a REAL person or FAKE (eg. image, video, etc. of that person)), for Anti-Spoofting (Others pretending to be the person), built with Convolutional Neural Network. After the login page, we also provided a webpage placeholder for future use.   
   
@@ -25,6 +27,15 @@ Use requirements.txt if you want to install the correct version of packages.
 - SQLAlchemy (for Flask)
 
 ## Project structure
+### This section will take you through the workings of the app
+Basically, the repo indicates how you can leverage AI as a security mechanism in a web app for PLC or Programmable logic controller operations.
+This project may be used globlly for any PLC as long as the dependecies are configured correctly
+We used Siemens s7 1200 PLC for our process
+
+So basically, the app is deployed to the workstation network, anyone who wants access should be authorized by admin first and have their photo data captured and fed into the model
+The user can now use th facial recognition system to access the process that relays a start and stop function but also includes a voice recognition AI where one specify PH by voice command
+
+This command is relayed to the program and the command and value are interpreted as data tables or states in the TIA Portal application, they are then written into the system PLC and PID control can now regulate the flow of acid or base depending on the value(e.g. if PH value command is 5, the PH value reading is 7, the acid tank should pour more acid than the base tank until the PH is at 5 then it should stop)
 (no need to care about "assets" folder, it's just images for GitHub)  
 <img src = "./assets/project_structure.png" width=446 height=702>  
 
@@ -94,8 +105,9 @@ Use requirements.txt if you want to install the correct version of packages.
 
 ## Basic usage
 1. Download/Clone this repo
-2. Run app.py
-3. That's it!  
+2. Download the dependecies in the file(i'll list them soon)
+3. Run app.py
+4. That's it!  
   
 **Note: Doing only these steps will allow only Liveness detection to work but not Recognition and Full login mechanism (for full workflow and training our own model, please keep reading and follow the next section)**
 
