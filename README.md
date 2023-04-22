@@ -34,11 +34,11 @@ Basically, the repo indicates how you can leverage AI as a security mechanism in
 This project may be used globaly for any PLC as long as the dependecies are configured correctly
 We used Siemens S7 1200 PLC for our process
 
-So basically, the app is deployed to the workstation network, anyone who wants access should be authorized by admin first and have their photo data captured and fed into the model
-The user can now use th facial recognition system to access the process that relays a start and stop function but also includes a voice recognition AI where one specify PH by voice command
+So basically, the app is deployed to the workstation network, anyone who wants access should be authorized by admin first and have their photo data captured and fed into the model.
+The user can now use th facial recognition system to access the process that relays a start and stop function but also includes a voice recognition AI where one specify PH by voice command.
 
 This command is relayed to the program and the command and value are interpreted as data tables or states in the TIA Portal application, they are then written into the system PLC and PID control can now regulate the flow of acid or base depending on the value(e.g. if PH value command is 5, the PH value reading is 7, the acid tank should pour more acid than the base tank until the PH is at 5 then it should stop)
-(no need to care about "assets" folder, it's just images for GitHub)  
+  
 <img src = "./assets/project_structure.png" width=446 height=702>  
 
 ## Files explanation
@@ -148,6 +148,8 @@ The feature is not limited to any machine and can have different use cases depen
 
 ## Problems we've found
 All login mechanism work properly, but sometimes OpenCV camera doesn't show up when calling a function from app.py or when logging in. But restarting app.py once or twice always solves the problem.
+
+### Please remember to download both hardware and software changes when applying the communication settings on your PLC or else you'll encounter errors
 
 ## Amazing resources I have learned from
 - https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/
