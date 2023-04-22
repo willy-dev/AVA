@@ -25,6 +25,8 @@ Use requirements.txt if you want to install the correct version of packages.
 - Flask
 - SQLite
 - SQLAlchemy (for Flask)
+- OPCUA (for plc communication with the code/ server and client)
+- Snap7 (for Python and PLC communication)
 
 ## Project structure
 ### This section will take you through the workings of the app
