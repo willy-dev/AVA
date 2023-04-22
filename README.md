@@ -29,8 +29,8 @@ Use requirements.txt if you want to install the correct version of packages.
 ## Project structure
 ### This section will take you through the workings of the app
 Basically, the repo indicates how you can leverage AI as a security mechanism in a web app for PLC or Programmable logic controller operations.
-This project may be used globlly for any PLC as long as the dependecies are configured correctly
-We used Siemens s7 1200 PLC for our process
+This project may be used globaly for any PLC as long as the dependecies are configured correctly
+We used Siemens S7 1200 PLC for our process
 
 So basically, the app is deployed to the workstation network, anyone who wants access should be authorized by admin first and have their photo data captured and fed into the model
 The user can now use th facial recognition system to access the process that relays a start and stop function but also includes a voice recognition AI where one specify PH by voice command
